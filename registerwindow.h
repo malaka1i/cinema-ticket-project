@@ -18,8 +18,12 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+
+    void on_groupBox_clicked();
+
 private:
     Ui::RegisterWindow *ui;
+    void hideErrors();
 };
 
 #endif // REGISTERWINDOW_H

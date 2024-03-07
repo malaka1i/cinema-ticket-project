@@ -15,9 +15,9 @@ RegisterWindow::RegisterWindow(QWidget *parent) :
 
 void RegisterWindow::hideErrors()
 {
-    ui->label_6->setVisible(false);
-    ui->label_3->setVisible(false);
-    ui->groupBox_2->setVisible(false);
+    ui->labelErrUsername->setVisible(false);
+    ui->labelErrRetype->setVisible(false);
+    ui->label_7->setVisible(false);
     ui->labelErrAllFields->setVisible(false);
 
 }
@@ -27,18 +27,18 @@ RegisterWindow::~RegisterWindow()
     delete ui;
 }
 
-void RegisterWindow::on_pushButtonRegister_clicked()
+void RegisterWindow:: on_pushButton_clicked()
 {
     hideErrors();
     bool errorsFound = false;
 
-    // ---------- Fields' Retrieval -----------
-    QString username = ui->label_6->text();
-    QString password = ui->label_2->text();
-    QString retype = ui->label_3->text();
+
+    QString username = ui->lineEditUsername->text();
+    QString password = ui->lineEditPassword->text();
+    QString retype = ui->lineEditRetype->text();
     QString month = ui->comboBoxMonth->currentText();
-    QString day = ui->label_4->text();
-    QString year = ui->label_8->text();
+    QString day = ui->lineEditDay->text();
+    QString year = ui->lineEditYear->text();
     bool male = ui->radioButtonMale->isChecked();
     bool female = ui->radioButtonFemale->isChecked();
     bool userAccount = ui->radioButtonUser->isChecked();
@@ -50,30 +50,29 @@ void RegisterWindow::on_pushButtonRegister_clicked()
     bool horrorGenre = ui->checkBoxHorror->isChecked();
     bool otherGenre = ui->checkBoxOtherGenre->isChecked();
 
-    // ---------- Errors' Checking -----------
-    // Check Username if existing
+
     for(int i = 0; i < usersCount; i++)
     {
         if (username == usernames[i])
         {
-            ui->label_6->setVisible(true);
+            ui->labelErrUsername->setVisible(true);
             errorsFound = true;
         }
     }
-    // Check re-type password
+
     if (password != retype)
     {
-        ui->label_3->setVisible(true);
+        ui->labelErrRetype->setVisible(true);
         errorsFound = true;
     }
-    // Check age
+
     int age = 2023 - year.toInt();
     if (age < 12)
     {
-        ui->groupBox_2->setVisible(true);
+        ui->label_7->setVisible(true);
         errorsFound = true;
     }
-    // Check all fields are entered
+
     if (username == "" || password == "" || retype == ""
         || month == "" || day == "" || year == ""
         || (!male && !female) || (!userAccount && !adminAccount)
@@ -84,20 +83,26 @@ void RegisterWindow::on_pushButtonRegister_clicked()
         errorsFound = true;
     }
 
-    // ---------- Successful -----------
+
     if (!errorsFound)
     {
-        // add new user
         usernames[usersCount] = username;
         passwords[usersCount] = password;
         ages[usersCount] = age;
         usersCount++;
-        // go to the welcome page
         WelcomeWindow* welcomewindow = new WelcomeWindow(username, age);
+        this->hide();
         welcomewindow->show();
-        this->close();
+
     }
+
+
 }
+
+
+
+
+
 
 
 

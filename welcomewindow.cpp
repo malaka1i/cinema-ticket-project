@@ -4,12 +4,12 @@
 #include <QPixmap>
 #include "mainwindow.h"
 
-WelcomeWindow::WelcomeWindow(QWidget *parent, QString username, int age)
+WelcomeWindow::WelcomeWindow(QString username, int age, QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::WelcomeWindow)
 {
     ui->setupUi(this);
-    QPixmap pix ("C:\Users\Malak Ali\Downloads\101d89b6cd5492080b4391d651cd527f.jpg");
+    QPixmap pix ("C:\\Users\\Malak Ali\\Downloads\\Walker_Art_Ctr_bg2012cinema0709_008_LG.jpg");
         int w = ui->image->width();
     int h = ui->image->height();
     ui->image->setPixmap(pix.scaled(w,h, Qt::KeepAspectRatio));

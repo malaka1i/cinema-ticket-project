@@ -149,6 +149,66 @@
      <height>26</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>jan</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>feb</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>march</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>april</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>may</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>june</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>july</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>aug</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sep</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>oct</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>nov</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>dec</string>
+    </property>
+   </item>
   </widget>
   <widget class="QGroupBox" name="groupBox_3">
    <property name="geometry">
@@ -309,7 +369,7 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>100</x>
      <y>370</y>
      <width>281</width>
      <height>101</height>
@@ -317,19 +377,6 @@
    </property>
    <property name="title">
     <string>Favorite Genre(s)</string>
-   </property>
-  </widget>
-  <widget class="QGroupBox" name="groupBox_2">
-   <property name="geometry">
-    <rect>
-     <x>109</x>
-     <y>149</y>
-     <width>271</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>Date of Birth</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEditDay">
@@ -404,6 +451,32 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;* Age is less than 12&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
+  <zorder>groupBox</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>lineEditPassword</zorder>
+  <zorder>lineEditRetype</zorder>
+  <zorder>lineEditUsername</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>checkBoxComedy</zorder>
+  <zorder>checkBoxDrama</zorder>
+  <zorder>checkBoxOtherGenre</zorder>
+  <zorder>comboBoxMonth</zorder>
+  <zorder>groupBox_3</zorder>
+  <zorder>groupBox_4</zorder>
+  <zorder>checkBoxHorror</zorder>
+  <zorder>checkBoxAction</zorder>
+  <zorder>checkBoxRomance</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_8</zorder>
+  <zorder>lineEditDay</zorder>
+  <zorder>lineEditYear</zorder>
+  <zorder>labelErrAllFields</zorder>
+  <zorder>labelErrUsername</zorder>
+  <zorder>labelErrRetype</zorder>
+  <zorder>label_7</zorder>
  </widget>
  <resources/>
  <connections/>

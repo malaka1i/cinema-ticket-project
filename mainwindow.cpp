@@ -29,8 +29,8 @@ void MainWindow::on_login_button_clicked()
         if (username == usernames[i] && password == passwords[i])
         {
             sucessful_login=true;
-            WelcomeWindow* WelcomeWindow = new WelcomeWindow(username, ages[i]);
-            WelcomeWindow->show();
+            WelcomeWindow* window = new WelcomeWindow(username,  ages[i]);
+            window->show();
             this->close();
         }
     }
