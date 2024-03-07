@@ -13,17 +13,17 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
      <x>120</x>
      <y>40</y>
-     <width>63</width>
+     <width>71</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Username</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Password</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -44,15 +44,15 @@
     <rect>
      <x>120</x>
      <y>120</y>
-     <width>63</width>
+     <width>131</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Re-type Password</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="lineEditPassword">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -61,8 +61,11 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="lineEditRetype">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -71,8 +74,11 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="lineEditUsername">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -95,7 +101,7 @@
     <string>Register</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="checkBox">
+  <widget class="QCheckBox" name="checkBoxComedy">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -105,10 +111,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>CheckBox</string>
+    <string>Comedy</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="checkBox_2">
+  <widget class="QCheckBox" name="checkBoxDrama">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -118,10 +124,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>CheckBox</string>
+    <string>Drama</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="checkBox_4">
+  <widget class="QCheckBox" name="checkBoxOtherGenre">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -131,30 +137,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>CheckBox</string>
+    <string>Other</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_4">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>200</y>
-     <width>80</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBox_5">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>200</y>
-     <width>80</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBox_6">
+  <widget class="QComboBox" name="comboBoxMonth">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -174,9 +160,9 @@
     </rect>
    </property>
    <property name="title">
-    <string>GroupBox</string>
+    <string>Account type </string>
    </property>
-   <widget class="QRadioButton" name="radioButton_5">
+   <widget class="QRadioButton" name="radioButtonAdmin">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -186,10 +172,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>Admin</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_6">
+   <widget class="QRadioButton" name="radioButtonUser">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -199,7 +185,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>User</string>
     </property>
    </widget>
   </widget>
@@ -213,9 +199,9 @@
     </rect>
    </property>
    <property name="title">
-    <string>GroupBox</string>
+    <string>Gender</string>
    </property>
-   <widget class="QRadioButton" name="radioButton_7">
+   <widget class="QRadioButton" name="radioButtonFemale">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -225,10 +211,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>Female</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="radioButtonMale">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -238,11 +224,11 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>Male</string>
     </property>
    </widget>
   </widget>
-  <widget class="QCheckBox" name="checkBox_7">
+  <widget class="QCheckBox" name="checkBoxHorror">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -252,10 +238,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>CheckBox</string>
+    <string>Horror</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="checkBox_8">
+  <widget class="QCheckBox" name="checkBoxAction">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -265,10 +251,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>CheckBox</string>
+    <string>Action</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="checkBox_9">
+  <widget class="QCheckBox" name="checkBoxRomance">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -278,7 +264,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>CheckBox</string>
+    <string>Romance</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -291,7 +277,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Month</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
@@ -304,10 +290,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Day</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -317,7 +303,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Year</string>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox">
@@ -330,7 +316,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>GroupBox</string>
+    <string>Favorite Genre(s)</string>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox_2">
@@ -343,7 +329,79 @@
     </rect>
    </property>
    <property name="title">
-    <string>GroupBox</string>
+    <string>Date of Birth</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditDay">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>200</y>
+     <width>61</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditYear">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>200</y>
+     <width>61</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrAllFields">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>530</y>
+     <width>351</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;* All fields must be filled &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrUsername">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>40</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;* Already existing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrRetype">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>120</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;* Not Matching&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>190</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;* Age is less than 12&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>
